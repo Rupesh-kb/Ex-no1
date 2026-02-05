@@ -67,6 +67,7 @@ END
 ---
 
 ## OUTPUT IMAGE FROM MASM SOFTWARE
+<img width="655" height="447" alt="add" src="https://github.com/user-attachments/assets/6f02951c-9bf9-4c77-9365-f9f0ef77f31b" />
 
 ## 2. SUBTRACTION
 
@@ -85,23 +86,21 @@ END
 
 #### Program
 ```asm
-CODE SEGMENT
-ASSUME CS: CODE, DS: CODE
-ORG 1000H
-MOV SI,2000H
-MOV CL,00H
-MOV AX,[SI]
-MOV BX,[SI+02H]
-SUB AX,BX
-JNC L1
-INC CL
-L1:
-MOV [SI+04H],AX
-MOV [SI+06H],CL
-MOV AH,4CH
-INT 21H
-CODE ENDS
-END
+code segment
+assume cs:code,ds:code
+org 1000h
+mov AX,1234h
+mov BX,1234h
+sub AX,BX
+jnc down
+inc CL
+down:mov SI,1200h
+mov [sI],AX
+mov [SI+2],CL
+mov ah,4ch
+int 21H
+code ends
+end
 ```
 
 
@@ -119,6 +118,7 @@ END
 
 
 ## OUTPUT SCREEN FROM MASM SOFTWARE
+<img width="638" height="429" alt="sub" src="https://github.com/user-attachments/assets/e76f46a4-92c5-4f74-a10e-b98fc919f7f0" />
 
 ## 3. MULTIPLICATION
 
@@ -138,20 +138,21 @@ END
 #### Program
 
 ```asm
-CODE SEGMENT
-ASSUME CS: CODE, DS: CODE
-ORG 1000H
-MOV SI,2000H
+code segment
+assume cs:code,ds:code
+org 1000h
 MOV DX,0000H
-MOV AX,[SI]
-MOV BX,[SI+02H]
-MUL BX
-MOV [SI+04H],AX
-MOV [SI+06H],DX
-MOV AH,4CH
-INT 21H
-CODE ENDS
-END
+mov AX,1234h
+mov BX,1234h
+mul BX
+mov si,1200h
+mov [si],ax
+mov [si+02h],dx
+mov ah,4ch
+int 21h
+code ends
+end
+
 ```
 
 #### Output Table
@@ -167,6 +168,7 @@ END
 ---
 
 ## OUTPUT SCREEN FROM MASM SOFTWARE
+<img width="636" height="431" alt="mul" src="https://github.com/user-attachments/assets/8dd2651e-183f-4b8a-810c-90728a9de976" />
 
 ## 4. DIVISION
 
@@ -184,19 +186,20 @@ END
 
 ```asm
 CODE SEGMENT
-ASSUME CS: CODE, DS: CODE
+ASSUME CS:CODE,DS:CODE
 ORG 1000H
-MOV SI,2000H
 MOV DX,0000H
-MOV AX,[SI]
-MOV BX,[SI+02H]
+MOV AX,1234H
+MOV BX,1234H
 DIV BX
-MOV [SI+04H],AX
-MOV [SI+06H],DX
+MOV SI,1200H
+MOV [SI],AX
+MOV [SI+02H],DX
 MOV AH,4CH
 INT 21H
 CODE ENDS
 END
+
 ```
 
 #### Output Table
@@ -211,6 +214,7 @@ END
 
 ---
 ## OUTPUT FROM MASM SOFTWARE
+<img width="636" height="431" alt="mul" src="https://github.com/user-attachments/assets/73447be7-1838-41b5-9346-30b62baf40a5" />
 
 
 
