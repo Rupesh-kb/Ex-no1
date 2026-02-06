@@ -56,13 +56,15 @@ END
 
 | MEMORY LOCATION (INPUT) | MEMORY LOCATION (OUTPUT) |
 | ----------------------- | ------------------------ |
-|       1200🔢       01         12
-
-|         1200                    |
+|      1200 : 12          |        1204 : 24         |
+|      1201 : 34          |        1205 : 68         |  
+|      1202 : 12          |        1206 : 00         |
+|      1203 : 34          |                          |  
 
 #### Manual Calculations
 
-(Add your calculation here)
+![WhatsApp Image 2026-02-06 at 1 10 31 PM](https://github.com/user-attachments/assets/d29ad7a9-80dd-4f58-8062-47d13d7566fe)
+
 
 ---
 
@@ -108,11 +110,14 @@ end
 
 | MEMORY LOCATION (INPUT) | MEMORY LOCATION (OUTPUT) |
 | ----------------------- | ------------------------ |
-|                         |                          |
+|      1200 : 12          |        1204 : 00         |
+|      1201 : 34          |        1205 : 00         |  
+|      1202 : 12          |                          |
+|      1203 : 34          |                          |  
 
 #### Manual Calculations
 
-(Add your calculation here)
+![WhatsApp Image 2026-02-06 at 1 10 31 PM (1)](https://github.com/user-attachments/assets/32c20ead-32db-4e05-9870-8d1553363086)
 
 ---
 
@@ -159,11 +164,15 @@ end
 
 | MEMORY LOCATION (INPUT) | MEMORY LOCATION (OUTPUT) |
 | ----------------------- | ------------------------ |
-|                         |                          |
+|      1200 : 12          |        1204 : 90         |
+|      1201 : 34          |        1205 : 5A         |  
+|      1202 : 12          |        1206 : 4B         |
+|      1203 : 34          |        1207 : 01         | 
 
 #### Manual Calculations
 
-(Add your calculation here)
+![WhatsApp Image 2026-02-06 at 1 10 32 PM](https://github.com/user-attachments/assets/637191e3-4f0c-4584-a880-0a351e22c7ac)
+
 
 ---
 
@@ -206,11 +215,15 @@ END
 
 | MEMORY LOCATION (INPUT) | MEMORY LOCATION (OUTPUT) |
 | ----------------------- | ------------------------ |
-|                         |                          |
+|      1200 : 12          |        1204 : 01         |
+|      1201 : 34          |        1205 : 00         |  
+|      1202 : 12          |        1206 : 00         |
+|      1203 : 34          |        1207 : 00         |  
 
 #### Manual Calculations
 
-(Add your calculation here)
+![WhatsApp Image 2026-02-06 at 1 10 32 PM (1)](https://github.com/user-attachments/assets/7890faf2-47c1-43e8-a720-49af56c2bee4)
+
 
 ---
 ## OUTPUT FROM MASM SOFTWARE
